@@ -1,0 +1,410 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Microsoft JhengHei;
+}
+
+body {
+    background-color: #F2F2F2;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    margin: auto;
+}
+
+/* --------導覽列(藍色)---------- */
+
+header {
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    height: 50px;
+    background-color: #00A0E9;
+}
+
+.head_img {
+    width: 1200px;
+    display: flex;
+    justify-self: center;
+    margin: auto;
+
+    img {
+        margin: 50px 0px 30px 30px;
+    }
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    width: 1200px;
+    justify-content: space-around;
+    padding-left: 50px;
+    height: 50px;
+    font-weight: bold;
+}
+
+nav img {
+    margin: 0px;
+    margin-right: 10px;
+}
+
+.nav_left ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.nav_left li {
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.nav_left a {
+    text-decoration: none;
+}
+
+.nav_left li:hover {
+    background-color: #33B3ED;
+}
+
+.nav_right {
+    margin-left: auto;
+}
+
+.nav_right a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav_right ul {
+    display: flex;
+    margin-right: 50px;
+}
+
+.nav_right li {
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav_right li:hover {
+    background-color: #33B3ED;
+}
+
+.nav_right_search li:hover {
+    background-color: #00A0E9;
+}
+
+/* --------技術問答-------- */
+
+.content {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+
+}
+
+.article_title {
+    display: flex;
+    align-items: center;
+}
+
+.RSS_button button {
+    align-items: center;
+    background-color: none;
+    border: 1px solid #F26522;
+    color: #F26522;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.tabs {
+    margin-left: auto;
+    display: flex;
+}
+
+.tabs button {
+    width: 100px;
+    height: 40px;
+    border: none;
+    padding: 10px 20px 10px;
+    margin-left: 5px;
+    border-radius: 5px 5px 0px 0px;
+    background-color: #D7E0E3;
+    color: #5F7C8C;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.tabs button:hover {
+    background-color: #C6D3D9;
+    color: #677A8A;
+}
+
+.tabs_latest button {
+    height: 45px;
+    background-color: #00A0E9;
+    color: white;
+    font-weight: bold;
+}
+
+.tabs_latest button:hover {
+    background-color: #00A0E9;
+    color: white;
+}
+
+/* --------文章列表(表格)-------- */
+
+.article table {
+    background-color: white;
+    border-collapse: collapse;
+    border-bottom: none;
+
+}
+
+.article table tr:first-child td {
+    border-top: 3px solid #00A0E9;
+}
+
+.article table tr td {
+    border-bottom: 1px solid #DDDDDD;
+
+    text-align: center;
+}
+
+.article table tr:last-child td {
+    border-bottom: none;
+}
+
+.like,
+.reply,
+.browsed {
+    width: 70px;
+    color: #969EA8;
+}
+
+.reply_1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+    font-weight: bolder;
+    border: 1px solid #FCA419;
+    background-color: white;
+    color: #FCA419;
+}
+
+.reply_2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+    font-weight: bolder;
+    background-color: #FCA419;
+    color: white;
+}
+
+.browsed {
+    color: black;
+}
+
+.question {
+    font-weight: bold;
+}
+
+.question,
+.inf {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    margin: 10px;
+    align-items: center;
+}
+
+.inf p,
+.inf a {
+    font-size: 14px;
+}
+
+.date:hover {
+    text-decoration: underline;
+}
+
+.name {
+    color: #00A9EE;
+}
+
+.name:hover {
+    color: #3FCFFF;
+    cursor: pointer;
+}
+
+.article table tr td a {
+    color: black;
+    text-decoration: none;
+}
+
+.article table tr td a:hover {
+    color: #0678B2
+}
+
+/*------ iThome鐵人賽 -------*/
+
+.iThome_event {
+    margin-bottom: 30px;
+}
+
+.iThome_event_title {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: linear-gradient(to right, #39D2FD, #03556C);
+    border-radius: 10px 10px 0px 0px;
+}
+
+
+.iThome_event_contents {
+    display: flex;
+    padding: 10px;
+    background-color: #98E2FE;
+    color: #03556C;
+    border-radius: 0px 0px 10px 10px;
+    text-align: center;
+    justify-content: center;
+    word-wrap: break-word;
+    flex-wrap: wrap;
+}
+
+.iThome_event_contents p {
+    width: 130px;
+    padding: 10px 0px;
+    margin: 5px;
+    font-size: 14px;
+    background-color: #E1F6FF;
+    border-radius: 10px;
+}
+
+.iThome_event_contents span {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+
+.iThome_event a {
+    text-decoration: none;
+    color: white;
+}
+
+/* ---------熱門tag--------- */
+
+.right {
+    width: 300px;
+    margin-left: 50px;
+}
+
+.tag_title,
+.hotquestions_title {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    color: white;
+    background-color: #00A0E9;
+}
+
+.tag_title a,
+.hotquestions_title a {
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+}
+
+.tags,
+.hotquestions {
+    background-color: white;
+    padding: 10px;
+}
+
+.tags_button {
+    border-radius: 5px;
+    margin: 3px;
+    padding: 5px;
+    border: none;
+    background-color: #E8EFF2;
+    color: #7A97A7;
+}
+
+.tags_button:hover {
+    background-color: #E8EFF2;
+    color: #98A7B1;
+}
+
+.hotquestions {
+    padding-left: 20px;
+
+    ul {
+        list-style: none;
+
+        li {
+            margin: 5px 0px 5px 0px;
+            font-size: 14px;
+
+            :hover {
+                color: #5D6062;
+            }
+        }
+    }
+}
+
+.hotquestions ul li::before {
+    content: "\2022";
+    color: #DDDDDD;
+    display: inline-block;
+    width: 1rem;
+    margin-left: -1rem;
+}
+
+.hotquestions a {
+    color: black;
+    text-decoration: none;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    color: white;
+    background-color: #343A41;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #37BCF9;
+}
